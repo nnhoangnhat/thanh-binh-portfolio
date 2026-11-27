@@ -1,0 +1,15 @@
+# Thư mục cài đặt thư viện & bản đóng gói tạm
+node_modules/
+dist/
+dist-ssr/
+
+# File hệ thống & nhật ký lỗi
+.DS_Store
+Thumbs.db
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.*
