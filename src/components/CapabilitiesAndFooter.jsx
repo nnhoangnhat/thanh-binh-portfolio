@@ -25,12 +25,12 @@ export default function CapabilitiesAndFooter({ capabilities, personal }) {
          ==================================================================== */}
       <section className="border-b border-white/[0.08] bg-[#07080b]">
         <div className="border-b border-white/[0.08]">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-6 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-2.5 text-[11px] uppercase tracking-[0.25em] text-white/85 font-semibold">
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-ice)]" />
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 py-4 sm:py-6 flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+            <div className="flex items-center gap-2.5 text-[10px] sm:text-[11px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-white/85 font-semibold">
+              <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-ice)] shrink-0" />
               <span>CORE EXPERTISE, LANGUAGES &amp; DIGITAL TOOLS</span>
             </div>
-            <span className="text-[11px] uppercase tracking-[0.22em] text-white/40">
+            <span className="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-white/40">
               EXECUTIVE COMPETENCIES
             </span>
           </div>
@@ -125,38 +125,38 @@ export default function CapabilitiesAndFooter({ capabilities, personal }) {
       {/* ====================================================================
           EXECUTIVE CONTACT FOOTER
          ==================================================================== */}
-      <footer id="contact" className="relative overflow-hidden bg-[#07080b] pt-24 pb-28">
+      <footer id="contact" className="relative overflow-hidden bg-[#07080b] pt-16 sm:pt-24 pb-20 sm:pb-28">
         <div
-          className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[720px] h-[340px] rounded-full blur-[150px] opacity-30"
+          className="pointer-events-none absolute bottom-0 left-1/2 -translate-x-1/2 w-[360px] sm:w-[720px] h-[240px] sm:h-[340px] rounded-full blur-[110px] sm:blur-[150px] opacity-30"
           style={{
             background: 'radial-gradient(circle, var(--arch-surface) 0%, transparent 70%)',
           }}
         />
 
-        <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-12">
-          <p className="text-[11px] uppercase tracking-[0.26em] text-[var(--accent-ice)] font-semibold">
+        <div className="relative z-10 max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12">
+          <p className="text-[9.5px] sm:text-[11px] uppercase tracking-[0.16em] sm:tracking-[0.26em] text-[var(--accent-ice)] font-semibold leading-relaxed">
             {personal.eyebrowPillars}
           </p>
 
-          <h2 className="mt-5 font-editorial text-5xl sm:text-6xl md:text-[78px] leading-[0.98] text-white max-w-4xl font-normal">
+          <h2 className="mt-4 sm:mt-5 font-editorial text-[34px] sm:text-6xl md:text-[78px] leading-[1.04] md:leading-[0.98] text-white max-w-4xl font-normal break-words">
             Ready to lead high-stakes{' '}
             <span className="italic text-[var(--accent-ice)]">global communications</span> &amp;
             executive engagement.
           </h2>
 
-          <div className="mt-10 flex flex-wrap items-center gap-4">
+          <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row sm:flex-wrap items-stretch sm:items-center gap-3 sm:gap-4">
             <a
               href={`mailto:${personal.email}`}
-              className="inline-flex items-center gap-3 rounded-full bg-white text-[#07080b] hover:bg-white/90 px-7 py-3.5 text-xs sm:text-sm font-semibold transition-all shadow-[0_14px_40px_rgba(255,255,255,0.16)]"
+              className="inline-flex items-center justify-center gap-3 rounded-full bg-white text-[#07080b] hover:bg-white/90 px-6 sm:px-7 py-3.5 text-xs sm:text-sm font-semibold transition-all shadow-[0_14px_40px_rgba(255,255,255,0.16)]"
             >
-              <Mail className="w-4 h-4" />
-              <span>{personal.email}</span>
+              <Mail className="w-4 h-4 shrink-0" />
+              <span className="truncate">{personal.email}</span>
             </a>
 
             <button
               type="button"
               onClick={handleCopyEmail}
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.1] px-5 py-3.5 text-xs sm:text-sm text-white/90 transition-all cursor-pointer"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.1] px-5 py-3.5 text-xs sm:text-sm text-white/90 transition-all cursor-pointer"
             >
               {copied ? (
                 <>
@@ -173,9 +173,9 @@ export default function CapabilitiesAndFooter({ capabilities, personal }) {
 
             <a
               href={`tel:${personal.phoneRaw}`}
-              className="inline-flex items-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.1] px-6 py-3.5 text-xs sm:text-sm text-white/90 transition-all"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border border-white/15 bg-white/[0.04] hover:bg-white/[0.1] px-6 py-3.5 text-xs sm:text-sm text-white/90 transition-all"
             >
-              <Phone className="w-4 h-4 text-[var(--accent-ice)]" />
+              <Phone className="w-4 h-4 text-[var(--accent-ice)] shrink-0" />
               <span>{personal.phone}</span>
             </a>
           </div>

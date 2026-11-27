@@ -58,20 +58,20 @@ export default function PortfolioAndTimelineSection({ pillars, timeline }) {
          ==================================================================== */}
       <section id="portfolio" className="border-b border-white/[0.08]">
         <div className="border-b border-white/[0.08]">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-6 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-2.5 text-[11px] uppercase tracking-[0.25em] text-white/85 font-semibold">
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-ice)]" />
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 py-4 sm:py-6 flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+            <div className="flex items-center gap-2.5 text-[10px] sm:text-[11px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-white/85 font-semibold">
+              <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-ice)] shrink-0" />
               <span>COMMUNICATIONS PORTFOLIO</span>
             </div>
-            <span className="text-[11px] uppercase tracking-[0.22em] text-white/40">
+            <span className="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-white/40">
               EXECUTIVE  •  CORPORATE  •  DIPLOMATIC ECOSYSTEM
             </span>
           </div>
         </div>
 
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-20 md:py-28">
-          <div className="max-w-3xl mb-14">
-            <h2 className="font-editorial text-4xl sm:text-5xl md:text-6xl leading-[1.04] text-white font-normal">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 py-14 sm:py-20 md:py-28">
+          <div className="max-w-3xl mb-10 sm:mb-14">
+            <h2 className="font-editorial text-[34px] sm:text-5xl md:text-6xl leading-[1.06] text-white font-normal">
               Three pillars of strategic influence &amp; stakeholder trust
             </h2>
           </div>
@@ -125,26 +125,26 @@ export default function PortfolioAndTimelineSection({ pillars, timeline }) {
          ==================================================================== */}
       <section id="experience" className="border-b border-white/[0.08]">
         <div className="border-b border-white/[0.08]">
-          <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-6 flex flex-wrap items-center justify-between gap-4">
-            <div className="flex items-center gap-2.5 text-[11px] uppercase tracking-[0.25em] text-white/85 font-semibold">
-              <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-ice)]" />
+          <div className="max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 py-4 sm:py-6 flex flex-wrap items-center justify-between gap-2 sm:gap-4">
+            <div className="flex items-center gap-2.5 text-[10px] sm:text-[11px] uppercase tracking-[0.18em] sm:tracking-[0.25em] text-white/85 font-semibold">
+              <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-ice)] shrink-0" />
               <span>PROFESSIONAL EXPERIENCE</span>
             </div>
-            <span className="text-[11px] uppercase tracking-[0.22em] text-white/40">
+            <span className="hidden sm:inline text-[11px] uppercase tracking-[0.22em] text-white/40">
               TNI KING COFFEE  •  DECEMBER 2020 – PRESENT
             </span>
           </div>
         </div>
 
-        <div className="max-w-[1440px] mx-auto px-6 md:px-12 py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-6 md:px-12 py-14 sm:py-20 md:py-28 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
           {/* Cột Trái: Tiêu đề cố định khi cuộn */}
           <div className="lg:col-span-4">
-            <div className="lg:sticky lg:top-24 space-y-5">
+            <div className="lg:sticky lg:top-24 space-y-4 sm:space-y-5">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-white/12 bg-white/[0.03] text-[11px] text-[var(--accent-ice)]">
                 <Briefcase className="w-3.5 h-3.5" />
                 <span>Nearly 6 Years Progressive Leadership</span>
               </div>
-              <h2 className="font-editorial text-4xl sm:text-5xl leading-[1.05] text-white font-normal">
+              <h2 className="font-editorial text-[34px] sm:text-5xl leading-[1.06] text-white font-normal">
                 From Intern to Principal Group Representative
               </h2>
               <p className="text-sm leading-relaxed text-white/65 font-light">
@@ -156,15 +156,15 @@ export default function PortfolioAndTimelineSection({ pillars, timeline }) {
           </div>
 
           {/* Cột Phải: Dòng thời gian chi tiết */}
-          <div className="lg:col-span-8 relative pl-6 sm:pl-10 border-l border-white/15 space-y-12">
+          <div className="lg:col-span-8 relative ml-2 sm:ml-0 pl-5 sm:pl-10 border-l border-white/15 space-y-8 sm:space-y-12">
             {timeline.map((item, index) => (
               <div
                 key={item.role}
-                className="timeline-item relative rounded-2xl border border-white/[0.09] bg-[#0b0e15]/75 p-6 sm:p-9 hover:border-white/20 transition-colors"
+                className="timeline-item relative rounded-2xl border border-white/[0.09] bg-[#0b0e15]/75 p-5 sm:p-9 hover:border-white/20 transition-colors"
               >
                 {/* Điểm nút phát sáng trên trục Timeline */}
                 <span
-                  className={`absolute -left-[31px] sm:-left-[47px] top-8 h-3.5 w-3.5 rounded-full border-2 ${
+                  className={`absolute -left-[27px] sm:-left-[47px] top-7 sm:top-8 h-3 w-3 sm:h-3.5 sm:w-3.5 rounded-full border-2 ${
                     index === 0
                       ? 'bg-[var(--accent-ice)] border-white shadow-[0_0_16px_var(--accent-ice)]'
                       : 'bg-[#07080b] border-[var(--accent-ice)]'
