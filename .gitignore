@@ -2,6 +2,10 @@
 node_modules/
 dist/
 dist-ssr/
+.vite/
+
+# Thư mục lưu trữ file video/ảnh gốc dung lượng lớn phục vụ chỉnh sửa offline
+assets-raw/
 
 # File hệ thống & nhật ký lỗi
 .DS_Store
