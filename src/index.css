@@ -149,6 +149,22 @@ body {
     0 0 32px var(--accent-glow);
 }
 
+/* Hiệu ứng mở màn hiện ra mượt mà ngay chính giữa cho chân dung Hero */
+.hero-portrait-entrance {
+  animation: portraitCenterReveal 0.95s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes portraitCenterReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(14px) scale(0.985);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 /* Hiệu ứng làm mờ chân ảnh chân dung hòa mượt vào nền đen tuyền */
 .portrait-fade-mask {
   -webkit-mask-image: linear-gradient(
